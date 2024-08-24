@@ -4,29 +4,29 @@ const Header: React.FC = () =>{
     return(
         <header className=" fixed top-0 backdrop-blur-sm left-0 right-0 z-50 h-[10vh] flex justify-center items-center">
         <div className="container mx-auto px-6 py-3 flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-gray-100">E<span className="text-accent">VIR</span>SA</h1>
+          <h1 className="text-3xl font-bold text-gray-800">E<span className="text-accent">VIR</span>SA</h1>
           <nav className="hidden md:flex space-x-6">
             <a
               href="#home"
-              className="text-gray-100 hover:text-accent transition-colors duration-300"
+              className="text-gray-800 hover:text-accent transition-colors duration-300"
             >
               Home
             </a>
             <a
               href="#expertise"
-              className="text-gray-100 hover:text-accent transition-colors duration-300"
+              className="text-gray-800 hover:text-accent transition-colors duration-300"
             >
               Expertise
             </a>
             <a
               href="#"
-              className="text-gray-100 hover:text-accent transition-colors duration-300"
+              className="text-gray-800 hover:text-accent transition-colors duration-300"
             >
               Services
             </a>
             <a
               href="#"
-              className="text-gray-100 hover:text-accent transition-colors duration-300"
+              className="text-gray-800 hover:text-accent transition-colors duration-300"
             >
               Contact
             </a>

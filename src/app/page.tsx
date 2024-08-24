@@ -69,7 +69,7 @@ const Home: React.FC<EvirsaProps> = () => {
             </div>
           </div>
         </main>
-        <section id='whyUs' className="h-screen w-full flex items-center">
+        <section id='whyUs' className="sm:h-screen h-fit w-full flex items-center">
           <div className="container mx-auto pb-10 px-6">
             <h3 className="text-3xl font-bold text-center text-accent mb-12">
               Why Choose Us?

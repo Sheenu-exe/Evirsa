@@ -1,7 +1,6 @@
 "use client"
 import React, { useEffect } from "react";
 import Typed from "typed.js";
-import Header from "./components/header";
 import Animation from "./components/laptop.json";
 import Lottie from "lottie-react";
 import Coding from "./components/coding.json"
@@ -34,7 +33,7 @@ const Home: React.FC<EvirsaProps> = () => {
 
   return (
     <>
-      <Header />
+     
       <div className="bg-white text-gray-800 font-['Poppins']">
         <main id="home" className="min-h-screen flex items-center pt-16">
           <div className="container mx-auto px-6">

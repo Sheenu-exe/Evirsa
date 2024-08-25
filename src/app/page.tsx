@@ -10,6 +10,7 @@ import seo from "./components/seo.json"
 import appdev from "./components/appdev.json"
 import gglads from "./components/gglads.json"
 import smo from "./components/smo.json"
+import AboutUs from "./components/aboutUs.json"
 
 interface EvirsaProps {}
 
@@ -69,7 +70,32 @@ const Home: React.FC<EvirsaProps> = () => {
             </div>
           </div>
         </main>
-        <section id='whyUs' className="sm:h-screen h-fit w-full flex items-center">
+        <section id="aboutUs" className="min-h-fit flex items-center justify-center">
+          <div className="container mx-auto px-6">
+            <h3 className="text-3xl font-bold text-center mb-14 text-accent">
+              About EVIRSA
+            </h3>
+            <div className="flex flex-col h-fit sm:h-[70vh] md:flex-row items-center ">
+              <div className="md:w-1/2">
+                <p className="text-gray-800 mb-4">
+                  EVIRSA is a dynamic web development and digital marketing company based in the vibrant city of Pune, India. Founded with a passion for innovation and a commitment to excellence, we've been transforming businesses through cutting-edge digital solutions since our inception.
+                </p>
+                <p className="text-gray-800 mb-4">
+                  Our team of skilled developers, creative designers, and marketing strategists work in synergy to deliver comprehensive digital experiences that drive growth and success for our clients. We pride ourselves on staying ahead of the curve in the ever-evolving digital landscape, ensuring that our clients always benefit from the latest technologies and trends.
+                </p>
+                <p className="text-gray-800">
+                  At EVIRSA, we believe in forging strong partnerships with our clients, understanding their unique needs, and crafting tailored solutions that align with their business objectives. Whether you're a startup looking to make your mark or an established enterprise aiming to enhance your digital presence, we're here to elevate your brand in the online world.
+                </p>
+              </div>
+              <div className="md:w-1/2 flex  h-fit justify-center items-center">
+               
+                <Lottie animationData={AboutUs} className="h-[60%]" />
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id='whyUs' className="sm:h-screen mt-14 h-fit w-full flex items-center">
           <div className="container mx-auto pb-10 px-6">
             <h3 className="text-3xl font-bold text-center text-accent mb-12">
               Why Choose Us?
@@ -102,34 +128,32 @@ const Home: React.FC<EvirsaProps> = () => {
               </div>
               <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md">
                 <h4 className="text-xl font-semibold text-accent mb-4">
-                  Expert Team
+                  Innovative Approach
                 </h4>
                 <p className="text-gray-800">
-                  Our team of experts is dedicated to delivering the best
-                  solutions for your business.
+                  We embrace cutting-edge technologies and creative strategies to keep your business ahead of the competition.
                 </p>
               </div>
               <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md">
                 <h4 className="text-xl font-semibold text-accent mb-4">
-                  Expert Team
+                  Results-Driven
                 </h4>
                 <p className="text-gray-800">
-                  Our team of experts is dedicated to delivering the best
-                  solutions for your business.
+                  Our focus is on delivering measurable results that contribute to your business growth and success.
                 </p>
               </div>
               <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md">
                 <h4 className="text-xl font-semibold text-accent mb-4">
-                  Expert Team
+                  Continuous Support
                 </h4>
                 <p className="text-gray-800">
-                  Our team of experts is dedicated to delivering the best
-                  solutions for your business.
+                  We provide ongoing support and maintenance to ensure your digital assets perform optimally at all times.
                 </p>
               </div>
             </div>
           </div>
         </section>
+       
         <section id="expertise" className="min-h-screen flex items-center">
           <div className="container mx-auto pb-10 px-6">
             <h3 className="text-3xl font-bold text-center text-accent mb-12">
@@ -193,10 +217,8 @@ const Home: React.FC<EvirsaProps> = () => {
                 <Lottie animationData={smo} className="h-[60%]" />
               </div>
             </div>
-            
           </div>
         </section>
-        
       </div>
     </>
   );

@@ -10,10 +10,15 @@ import appdev from "./components/appdev.json"
 import gglads from "./components/gglads.json"
 import smo from "./components/smo.json"
 import AboutUs from "./components/aboutUs.json"
+import { motion } from "framer-motion";
+import { IoIosArrowForward } from "react-icons/io";
+
 
 interface EvirsaProps {}
 
 const Home: React.FC<EvirsaProps> = () => {
+
+ 
   useEffect(() => {
     const typed = new Typed("#typed-text", {
       strings: ["Digital Presence", "Website Visibility", "Marketing Strategy"],
@@ -31,11 +36,23 @@ const Home: React.FC<EvirsaProps> = () => {
     };
   }, []);
 
+  // Animation variants
+const fadeInUp = {
+  initial: { opacity: 0, y: 60 },
+  animate: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.6 }
+  }
+};
+
   return (
     <>
-     
-      <div className="bg-white text-gray-800 font-['Poppins']">
-        <main id="home" className="min-h-screen flex items-center pt-16">
+      <div className=" text-gray-800 font-['Poppins'] bg-[https://as2.ftcdn.net/v2/jpg/02/98/21/71/1000_F_298217175_oEfbikdbPeyEPWtTHoBiGFh5C3COKv4y.jpg]">
+        <main 
+          id="home" 
+          className="min-h-screen flex items-center pt-16"
+        >
           <div className="container mx-auto px-6">
             <div className="flex flex-col-reverse md:flex-row items-center">
               <div className="sm:w-[50%] w-full sm:h-screen h-[60vh] flex flex-col justify-center items-left gap-y-3">
@@ -69,7 +86,10 @@ const Home: React.FC<EvirsaProps> = () => {
             </div>
           </div>
         </main>
-        <section id="aboutUs" className="min-h-fit flex items-center justify-center">
+
+        <section 
+          id="aboutUs" 
+          className="min-h-fit pt-10 flex items-center justify-center">
           <div className="container mx-auto px-6">
             <h3 className="text-3xl font-bold text-center mb-14 text-accent">
               About EVIRSA
@@ -87,20 +107,21 @@ const Home: React.FC<EvirsaProps> = () => {
                 </p>
               </div>
               <div className="md:w-1/2 flex  h-fit justify-center items-center">
-               
                 <Lottie animationData={AboutUs} className="h-[60%]" />
-                
               </div>
             </div>
           </div>
         </section>
-        <section id='whyUs' className="sm:h-screen mt-14 h-fit w-full flex items-center">
+
+        <section 
+          id='whyUs' 
+          className="sm:h-screen mt-14 h-fit w-full flex items-center">
           <div className="container mx-auto pb-10 px-6">
             <h3 className="text-3xl font-bold text-center text-accent mb-12">
               Why Choose Us?
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md">
+              <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md why-us-thing">
                 <h4 className="text-xl font-semibold text-accent mb-4">
                   Expert Team
                 </h4>
@@ -109,7 +130,7 @@ const Home: React.FC<EvirsaProps> = () => {
                   solutions for your business.
                 </p>
               </div>
-              <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md">
+              <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md why-us-thing">
                 <h4 className="text-xl font-semibold text-accent mb-4">
                   Custom Solutions
                 </h4>
@@ -117,7 +138,7 @@ const Home: React.FC<EvirsaProps> = () => {
                   We provide custom solutions tailored to your business needs.
                 </p>
               </div>
-              <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md">
+              <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md why-us-thing">
                 <h4 className="text-xl font-semibold text-accent mb-4">
                   Affordable Pricing
                 </h4>
@@ -125,7 +146,7 @@ const Home: React.FC<EvirsaProps> = () => {
                   Our services are affordable without compromising on quality.
                 </p>
               </div>
-              <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md">
+              <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md why-us-thing">
                 <h4 className="text-xl font-semibold text-accent mb-4">
                   Innovative Approach
                 </h4>
@@ -133,7 +154,7 @@ const Home: React.FC<EvirsaProps> = () => {
                   We embrace cutting-edge technologies and creative strategies to keep your business ahead of the competition.
                 </p>
               </div>
-              <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md">
+              <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md why-us-thing">
                 <h4 className="text-xl font-semibold text-accent mb-4">
                   Results-Driven
                 </h4>
@@ -141,7 +162,7 @@ const Home: React.FC<EvirsaProps> = () => {
                   Our focus is on delivering measurable results that contribute to your business growth and success.
                 </p>
               </div>
-              <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md">
+              <div className="bg-zinc-200/50 p-6 rounded-lg shadow-md why-us-thing">
                 <h4 className="text-xl font-semibold text-accent mb-4">
                   Continuous Support
                 </h4>
@@ -153,13 +174,15 @@ const Home: React.FC<EvirsaProps> = () => {
           </div>
         </section>
        
-        <section id="expertise" className="min-h-screen flex items-center">
+        <section 
+          id="expertise" 
+          className="min-h-screen flex items-center">
           <div className="container mx-auto pb-10 px-6">
             <h3 className="text-3xl font-bold text-center text-accent mb-12">
               Our Services
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-              <div className="bg-zinc-200/50 p-6 h-[50vh] rounded-lg shadow-md ">
+              <div className="bg-zinc-200/50 p-6 h-[50vh] rounded-lg shadow-md expertise-thing">
                 <h4 className="text-xl font-semibold text-accent mb-4">
                   Web Development
                 </h4>
@@ -169,7 +192,7 @@ const Home: React.FC<EvirsaProps> = () => {
                 </p>
                 <Lottie animationData={Coding} className="h-[60%]" />
               </div>
-              <div className="bg-zinc-200/50 p-6 h-[50vh] rounded-lg shadow-md">
+              <div className="bg-zinc-200/50 p-6 h-[50vh] rounded-lg shadow-md expertise-thing">
                 <h4 className="text-xl font-semibold text-accent mb-4">
                   Digital Marketing
                 </h4>
@@ -179,7 +202,7 @@ const Home: React.FC<EvirsaProps> = () => {
                 </p>
                 <Lottie animationData={Marketng} className="h-[60%]" />
               </div>
-              <div className="bg-zinc-200/50 p-6 h-[50vh] rounded-lg shadow-md">
+              <div className="bg-zinc-200/50 p-6 h-[50vh] rounded-lg shadow-md expertise-thing">
                 <h4 className="text-xl font-semibold text-accent mb-4">
                   SEO Optimization
                 </h4>
@@ -188,7 +211,7 @@ const Home: React.FC<EvirsaProps> = () => {
                 </p>
                 <Lottie animationData={seo} className="h-[60%]" />
               </div>
-              <div className="bg-zinc-200/50 p-6 h-[50vh] rounded-lg shadow-md">
+              <div className="bg-zinc-200/50 p-6 h-[50vh] rounded-lg shadow-md expertise-thing">
                 <h4 className="text-xl font-semibold text-accent mb-4">
                   App Development
                 </h4>
@@ -197,7 +220,7 @@ const Home: React.FC<EvirsaProps> = () => {
                 </p>
                 <Lottie animationData={appdev} className="h-[60%]" />
               </div>
-              <div className="bg-zinc-200/50 p-6 h-[50vh] rounded-lg shadow-md">
+              <div className="bg-zinc-200/50 p-6 h-[50vh] rounded-lg shadow-md expertise-thing">
                 <h4 className="text-xl font-semibold text-accent mb-4">
                 Google Ads / PPC
                 </h4>
@@ -206,7 +229,7 @@ const Home: React.FC<EvirsaProps> = () => {
                 </p>
                 <Lottie animationData={gglads} className="h-[60%]" />
               </div>
-              <div className="bg-zinc-200/50 p-6 h-[50vh] rounded-lg shadow-md">
+              <div className="bg-zinc-200/50 p-6 h-[50vh] rounded-lg shadow-md expertise-thing">
                 <h4 className="text-xl font-semibold text-accent mb-4">
                 SMO Marketing
                 </h4>
@@ -217,6 +240,13 @@ const Home: React.FC<EvirsaProps> = () => {
               </div>
             </div>
           </div>
+        </section>
+        <section 
+          id='cta' 
+          className="h-[90vh] sm:bg-center bg-top w-full flex items-center justify-center gap-10 flex-col  text-center ">
+            <h1 className=" sm:text-7xl text-5xl mx-2 text-white font-extrabold">Want to create <br/> Something Awesome?</h1>
+
+            <button className="bg-white text-gray-800 px-3 text-lg py-2 rounded flex justify-center items-center gap-1">Lets Talk<IoIosArrowForward /></button>
         </section>
       </div>
     </>

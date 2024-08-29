@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
+import whiteLogo from "./evirsa-logo-white.png"
+import '../globals.css'
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white pt-12 pb-8">
@@ -8,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">EVIRSA</h3>
+            <Image className='w-auto h-[12vh]' src={whiteLogo} alt='logo'/>
             <p className="mb-4">Elevating your digital presence with expert web development and marketing solutions.</p>
             <p>Pune, Maharashtra, India</p>
           </div>
@@ -17,10 +19,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><Link href="/" className="hover:text-accent transition-colors">Home</Link></li>
-              <li><Link href="#aboutUs" className="hover:text-accent transition-colors">About Us</Link></li>
-              <li><Link href="#services" className="hover:text-accent transition-colors">Services</Link></li>
-              <li><Link href="#contact" className="hover:text-accent transition-colors">Contact</Link></li>
+            <Link href="/" className="hover:text-accent transition-colors"><li>Home</li></Link>
+            <Link href="/aboutus" className="hover:text-accent transition-colors"><li>About Us</li></Link>
+            <Link href="/" className="hover:text-accent transition-colors"><li>Services</li></Link>
+            <Link href="/contact" className="hover:text-accent transition-colors"><li>Contact us</li></Link>
             </ul>
           </div>
 

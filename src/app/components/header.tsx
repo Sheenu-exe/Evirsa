@@ -61,7 +61,7 @@ const Header: React.FC = () => {
           <Image className="w-[25vw] mb-6" src={Logo} alt="Evirsa Logo" />
           <nav className="flex flex-col space-y-4">
             <a
-              href="#home"
+              href="/"
               className="text-gray-800 hover:text-accent transition-colors duration-300"
               onClick={toggleMenu}
             >

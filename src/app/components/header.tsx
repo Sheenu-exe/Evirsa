@@ -14,19 +14,14 @@ const Header: React.FC = () =>{
               Home
             </a>
             <a
-              href="#expertise"
+              href="/aboutus"
               className="text-gray-800 hover:text-accent transition-colors duration-300"
             >
               Know us
             </a>
+          
             <a
-              href="#"
-              className="text-gray-800 hover:text-accent transition-colors duration-300"
-            >
-              Services
-            </a>
-            <a
-              href="#"
+              href="/contact"
               className="text-gray-800 hover:text-accent transition-colors duration-300"
             >
               Contact

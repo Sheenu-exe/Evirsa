@@ -246,7 +246,7 @@ const fadeInUp = {
           className="h-[90vh] sm:bg-center bg-top w-full flex items-center justify-center gap-10 flex-col  text-center ">
             <h1 className=" sm:text-7xl text-5xl mx-2 text-white font-extrabold">Want to create <br/> Something Awesome?</h1>
 
-            <button className="bg-white text-gray-800 px-3 text-lg py-2 rounded flex justify-center items-center gap-1">Lets Talk<IoIosArrowForward /></button>
+            <a href="/contact" className="bg-white text-gray-800 px-3 text-lg py-2 rounded flex justify-center items-center gap-1">Lets Talk<IoIosArrowForward /></a>
         </section>
       </div>
     </>

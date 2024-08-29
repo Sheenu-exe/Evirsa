@@ -67,12 +67,12 @@ const fadeInUp = {
                 </p>
                 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                   <a
-                    href="#"
+                    href="#expertise"
                     className="bg-primary text-gray-100 px-6 py-3 rounded-md font-semibold border-secondary border hover:bg-accent transition-colors m-0 duration-300 text-center">
                     Our Services
                   </a>
                   <a
-                    href="#"
+                    href="/contact"
                     className="bg-primary text-gray-100 px-6 py-3 rounded-md font-semibold border-secondary border  hover:bg-accent transition-colors m-0 duration-300 text-center">
                     Contact Us
                   </a>

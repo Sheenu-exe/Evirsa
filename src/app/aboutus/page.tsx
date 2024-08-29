@@ -62,7 +62,7 @@ const AboutUs: React.FC = () => {
               
               <div>
                 <h4 className="text-2xl font-semibold mb-2 text-accent">Shreyas Jagtap</h4>
-                <p className="text-gray-800 mb-2">Co-founder & Marketing Manager</p>
+                <p className="text-gray-800 mb-2">Co-founder & Tech Architect</p>
                 <p className="text-gray-800">
                   Shreyas oversees the technical architecture at EVIRSA, leveraging his expertise in cloud computing and backend technologies to build robust, scalable solutions.
                 </p>

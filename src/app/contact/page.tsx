@@ -26,7 +26,7 @@ const WorkWithUs: React.FC = () => {
   return (
     <section className="min-h-screen py-20 bg-gray-100">
       <div className="container mx-auto px-6">
-        <h2 className="text-5xl font-bold text-center mb-16 text-accent animate-fadeInUp">
+        <h2 className="text-5xl font-bold mt-10 text-center mb-16 text-accent animate-fadeInUp">
           Work With Us
         </h2>
 

@@ -48,7 +48,7 @@ const AboutUs: React.FC = () => {
               
               <div>
                 <h4 className="text-2xl font-semibold mb-2 text-accent">Sachin Parihar</h4>
-                <p className="text-gray-800 mb-2">Co-founder & Front-End Expert</p>
+                <p className="text-gray-800 mb-2">Co-founder, Web development and UI UX Expert</p>
                 <p className="text-gray-800">
                   Sachin leads the web development & UI UX at EVIRSA, bringing expertise in React, Next.js, and modern web technologies to create cutting-edge user experiences.
                 </p>
@@ -62,7 +62,7 @@ const AboutUs: React.FC = () => {
               
               <div>
                 <h4 className="text-2xl font-semibold mb-2 text-accent">Shreyas Jagtap</h4>
-                <p className="text-gray-800 mb-2">Co-founder & Tech Architect</p>
+                <p className="text-gray-800 mb-2">Co-founder & Marketing Manager</p>
                 <p className="text-gray-800">
                   Shreyas oversees the technical architecture at EVIRSA, leveraging his expertise in cloud computing and backend technologies to build robust, scalable solutions.
                 </p>
